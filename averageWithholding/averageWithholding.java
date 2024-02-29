@@ -7,15 +7,15 @@ public class averageWithholding {
 		// Declaring the Scanner object for user input and required variables
 		Scanner scnr = new Scanner(System.in);
 		String name;
-		int income;
+		double income;
 		float taxWithholding;
 		double taxRate;
 		
 		//Requesting user input for income
 		System.out.println("Enter Employee Name:");
 		name = scnr.nextLine();
-		System.out.println("What's your weekly income?");
-		income = scnr.nextInt();
+		System.out.println("Enter weekly earnings: ");
+		income = scnr.nextDouble();
 		
 		//Selection Structure to calculate tax withholding based on entered income
 		if(income < 500) {
